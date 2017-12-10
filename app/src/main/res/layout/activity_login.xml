@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hao.turing.Main.LoginActivity">
+
+    <TextView
+        android:id="@+id/login_textview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="登录"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/login_register_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_quick_register"
+        android:layout_below="@id/login_textview"
+        android:textSize="15dp"
+        android:layout_alignRight="@id/login_textview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/login_textview"
+        android:layout_alignLeft="@id/login_textview"
+        android:layout_alignRight="@id/login_textview"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/login_account_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_hint_account"
+            android:maxLength="20"/>
+        <EditText
+            android:id="@+id/login_password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/login_hint_password"
+            android:maxLength="20"/>
+    </LinearLayout>
+
+</RelativeLayout>

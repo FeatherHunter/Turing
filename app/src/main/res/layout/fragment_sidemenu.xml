@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/sidemenu_account_relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/sidemenu_user_imageview"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/sidemenu_user_account_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="帅猎羽"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/sidemenu_user_imageview"/>
+    </RelativeLayout>
+
+    <!--侧滑菜单中的设置列表-->
+    <LinearLayout
+        android:id="@+id/sidemenu_items_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sidemenu_account_relativelayout"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white">
+
+        </View>
+        <TextView
+            android:id="@+id/sidemenu_account_textview"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="账号"
+            android:textSize="18sp"
+            android:gravity="center"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary">
+        </View>
+
+    </LinearLayout>
+
+</RelativeLayout>
