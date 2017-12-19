@@ -1,9 +1,11 @@
-package com.hao.turing;
+package com.hao.turing.ui.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.hao.turing.R;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
